@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Curriculum Vitae</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Segoe UI, Arial;
+            background: #f4f6f9;
+        }
+
+        /* HEADER */
+
+        header {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 40px;
+        }
+
+        header h1 {
+            font-size: 36px;
+        }
+
+        /* CONTENEDOR */
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 30px;
+            padding: 40px 20px;
+        }
+
+        /* SIDEBAR */
+
+        .sidebar {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar h2 {
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+
+        .sidebar p {
+            margin-bottom: 8px;
+        }
+
+        /* CONTENIDO */
+
+        .content {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h2 {
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+
+        /* HABILIDADES */
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill {
+            background: #1abc9c;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        /* RESPONSIVE */
+
+        @media(max-width:800px) {
+
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+        .btn-home {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 10px;
+            background: #0b63ac;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .btn-home:hover {
+            background: #0a53b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Jhonny Bermudez Zambrano</h1>
+        <p>Ingeniería Civil | Sistemas Inteligentes</p>
+        <a class="btn-home" href="index.html">← Volver al menú principal</a>
+    </header>
+
+    <div class="container">
+
+        <!-- SIDEBAR -->
+        <div class="sidebar">
+            <h2>Contacto</h2>
+            <p><strong>Ciudad:</strong> Portoviejo</p>
+            <p><strong>Teléfono:</strong> 969045044</p>
+            <p><strong>Email:</strong> joberzam@hotmail.com</p>
+            <h2>Habilidades</h2>
+            <div class="skills">
+                <div class="skill">Excel</div>
+                <div class="skill">AutoCAD</div>
+                <div class="skill">Civil 3D</div>
+                <div class="skill">QGIS</div>
+                <div class="skill">HTML</div>
+                <div class="skill">Redes LAN</div>
+            </div>
+
+        </div>
+
+        <!-- CONTENIDO -->
+
+        <div class="content">
+            <div class="section">
+                <h2>Formación Académica</h2>
+                <p>Bachiller Técnico Industrial en Electricidad</p>
+                <p>Técnico Superior en Programación de Sistemas</p>
+                <p>Ingeniería Civil – Universidad Técnica de Manabí</p>
+                <p>Ingeniería en Sistemas Inteligentes – UBE</p>
+            </div>
+
+            <div class="section">
+                <h2>Experiencia Laboral</h2>
+                <p>Profesor de Computación – CORADI</p>
+                <p>Constructora Vial Fabara & Asociados</p>
+                <p>Constructora Carlo Poggi Barbieri</p>
+                <p>Consorcio CRTV La Maná</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

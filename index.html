@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Programación Web Avanzada</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Segoe UI, Arial;
+            background: linear-gradient(135deg, #1f2d3d, #34495e);
+            color: white;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* CONTENEDOR */
+        .container {
+            text-align: center;
+        }
+
+        /* TITULOS */
+        h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+
+        /* GRID */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        /* TARJETAS */
+        .card {
+            background: white;
+            color: #333;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* BOTON */
+        .card a {
+            display: inline-block;
+            margin-top: 15px;
+            text-decoration: none;
+            background: #1abc9c;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        .card a:hover {
+            background: #16a085;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Programación Web Avanzada</h1>
+        <h2>Clase Práctica 1</h2>
+        <h3>Jhonny Bermudez</h3>
+        <br>
+        <br>
+        <div class="grid">
+
+            <div class="card">
+
+                <h2>Ejercicio 1</h2>
+
+                <p>Curriculum Vitae Personal</p>
+
+                <a href="ej01.html">Ver ejercicio</a>
+
+            </div>
+
+            <div class="card">
+
+                <h2>Ejercicio 2</h2>
+
+                <p>Sitio web de empresa de servicios</p>
+
+                <a href="ej02/index.html">Ver sitio</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
